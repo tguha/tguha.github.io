@@ -1,0 +1,216 @@
+/*This is my 318 CONTACT PAGE using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+ */
+
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed, 
+ figure, figcaption, footer, header, hgroup, 
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+ 	margin: 0;
+ 	padding: 0;
+ 	border: 0;
+ 	font-size: 100%;
+ 	font: inherit;
+ 	vertical-align: baseline;
+ }
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, 
+ footer, header, hgroup, menu, nav, section {
+ 	display: block;
+ }
+ body {
+ 	line-height: 1;
+ }
+ ol, ul {
+ 	list-style: none;
+ }
+ blockquote, q {
+ 	quotes: none;
+ }
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+ 	content: '';
+ 	content: none;
+ }
+ table {
+ 	border-collapse: collapse;
+ 	border-spacing: 0;
+ }
+
+
+
+ /* ---------- Hello, my name is Trisha Guha and this is the beginning of my CONTACT PAGE CSS for 201 Digital Publishing Systems March 2022 ------------ */
+
+ html, body {
+   height: 100%;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+   background: url(images/orange_bg.jpg) 
+     center center fixed no-repeat;
+     background-size: cover;
+
+
+ }
+
+ .center {
+     width: 80%; /*added this to make div responsive*/
+ 	padding: 2%;
+     margin: 100px auto;
+ 	text-align: center;
+ }
+
+
+ #logo {
+     margin-bottom: 40px;
+     margin-top: 40px;
+ 	text-align: center;
+
+ }
+
+ h1 {
+ 	font-family: utile-display, sans-serif;
+     font-weight: 200;
+     font-style: italic;
+ 	font-size: 2em;
+     margin: 0px auto 10px auto;
+     color: #fff;
+     letter-spacing: 5px;
+
+     /*incorporating fade in and out*/
+     animation: fadeIn ease 5s;
+     -webkit-animation: fadeIn ease 5s;
+     -mox-animation: fadeIn ease 5s;
+     -o-animation: fadeIn ease 5s;
+     -ms-animation: fadeIn ease 5s;
+ }
+ @keyframes fadeIn {
+     0% {
+         opacity:0;
+     }
+     100% {
+         opacity:1;
+     }
+ }
+ @-moz-keyframes fadeIn {
+     0% {
+         opacity:0;
+     }
+     100% {
+         opacity:1;
+     }
+ }
+ @-webkit-keyframes fadeIn {
+     0% {
+         opacity:0;
+     }
+     100% {
+         opacity:1;
+     }
+ }
+ @-o-keyframes fadeIn {
+     0% {
+         opacity:0;
+     }
+     100% {
+         opacity:1;
+     }
+ }
+ @-ms-keyframes fadeIn {
+     0% {
+         opacity:0;
+     }
+     100% {
+         opacity:1;
+     }
+ }
+
+
+ h2 {
+     font-family: utile-display, sans-serif;
+     font-weight: 200;
+     font-style: normal;
+ 	font-size: 1.5em;
+     line-height: 1.4;
+     color: #fff;
+     padding: 0px 0px;
+     margin: 0px auto 25px auto;
+ }
+
+ p {
+     font-family: utile-display, serif;
+     font-weight: 400;
+     font-style: italic;
+ 	font-size: 1.2em;
+     line-height: 1.6;
+     color: #fff;
+ }
+ nav {
+     font-family: utile-display, sans-serif;
+     font-weight: 200;
+     font-style: normal;
+     font-size: 1.2em;
+     width: 80%;
+     margin: 0 auto;
+     border: solid orange;
+     border-width: 3px 0;
+     text-align: bottom;
+     margin-top: 2em;
+ }
+
+ nav li {
+     display:inline-flex;
+ }
+
+ nav a {
+     display:inline-flex;
+     padding: 16px;
+ }
+
+ a {
+     color:white;
+     text-decoration: none;
+     font-weight: 400;
+     transition: all 0.5s ease-in-out;
+     position: relative;
+     text-transform: uppercase;
+
+     &:: before {
+         content: attr(data-item);
+         transition: 0.5s;
+         color: orange;
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         width: 0;
+         overflow: hidden;
+     }
+
+     &: hover {
+         &:: before {
+             width: 100%
+                 transition: all 0.5 ease-in-out;
+         }
+     }
+ } 
+
+ a:hover {
+     color:black;
+     background:white;
+ }
